@@ -1,0 +1,24 @@
+The goal of this analysis is to answer the question: Can a random forest regression (RFR)
+model predict the difference between a pulse oximeter (SpO2) and arterial oxygen
+saturation (SaO2) reading using the given data set?
+
+The context of this analysis is the common usage of SpO2 in hospitals and clinics. SpO2
+is a convenient, non-invasive measurement of the blood's oxygen levels. A major benefit
+of SpO2 reading is that it can be done continuously at a low cost. This stands in contrast
+to the gold standard for blood oxygen saturation measurement, SaO2, which is collected
+via arterial blood gas (ABG). This is an invasive procedure where blood is drawn from an
+artery with inherent risks, such as bleeding, infection, and blood clots. Since it is not a
+continuous measurement, multiple draws are often required.
+
+Research has demonstrated that SpO2 does not always correlate accurately with SaO2,
+especially at lower levels (Sjoding et al., 2023). Hidden hypoxemia, which is when SpO2
+is > 88% yet the SaO2 is < 88%, may be present and remain undetected if solely relying
+on SpO2 readings, leading to inaccurate diagnosis and delayed treatment of hypoxemia.
+This, in turn, can lead to extended hospitalizations and poor patient outcomes.
+Building a statistical model to predict the SaO2 value that uses only non-invasive
+measurement could lead to improved hypoxemia diagnosis while reducing the risks
+associated with arterial access. Venous blood draws are a common method used to
+obtain lab measurements and are frequently done in conjunction when starting
+intravenous (IV) treatments. The skills and risks associated with venous access are
+significantly lower than arterial draws and measurements, allowing smaller hospitals and
+clinics the ability to use these methods easily.
